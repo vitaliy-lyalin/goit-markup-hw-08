@@ -1,0 +1,9 @@
+.logo {
+  display: block;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  font-family: Raleway, sans-serif;
+  @include font($fw: 700, $fs: 26px, $lh: 31px);
+  color: var(--accent-color);
+}

@@ -1,0 +1,8 @@
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+
+  @include font($fw: 700, $fs: 36px, $lh: 42px);
+  color: var(--secondary-text-color);
+}

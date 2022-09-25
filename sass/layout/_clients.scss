@@ -1,0 +1,25 @@
+.clients-list {
+  @extend %align;
+}
+
+.clients-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-list__link {
+  @extend %align;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-background-color);
+  border-radius: 4px;
+
+  fill: var(--icon-background-color);
+
+  transition: fill var(--transition-dur-and-func), border var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+  }
+}

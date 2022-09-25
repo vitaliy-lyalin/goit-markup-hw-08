@@ -1,0 +1,67 @@
+.header {
+  padding: 24px 0;
+  background-color: var(--white-color);
+  border-bottom: 1px solid #ececec;
+}
+.header-container {
+  display: flex;
+}
+.header-navigation {
+  @extend %align;
+
+  &__logo {
+    margin-right: 93px;
+  }
+  &__label {
+    color: var(--black-color);
+  }
+}
+
+.menu {
+  @extend %align;
+}
+
+.menu__item {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.menu__link {
+  @include font($fw: 500, $lh: 16px, $ls: 0.02em);
+  color: var(--secondary-text-color);
+
+  transition: color var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.communication {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+.communication__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.communication__link {
+  @extend %align;
+  color: var(--primary-text-color);
+  @include font($fw: 500, $lh: 16px, $ls: 0.02em);
+
+  transition: color var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.communication__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}

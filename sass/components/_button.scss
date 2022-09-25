@@ -1,0 +1,12 @@
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+
+  font-family: inherit;
+  font-style: normal;
+
+  @include font($fw: 700, $fs: 16px, $lh: 30px, $ls: 0.06em);
+
+  cursor: pointer;
+}

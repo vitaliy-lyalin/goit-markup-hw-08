@@ -1,0 +1,38 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+
+  min-width: 528px;
+  min-height: 581px;
+
+  background: var(--primary-background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.modal-close-button {
+  position: absolute;
+  @extend %align;
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  right: 8px;
+  padding: 0;
+  
+
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.modal-close-button__icon {
+  transition: fill var(--transition-dur-and-func);
+
+  .modal-close-button:hover &,
+  .modal-close-button:focus & {
+    fill: var(--accent-color);
+  }
+}

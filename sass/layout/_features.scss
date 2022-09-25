@@ -1,0 +1,36 @@
+.section-features {
+  padding-bottom: 0;
+}
+.features-list {
+  display: flex;
+}
+.features-list__item {
+  width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.features-list-wrapper {
+  @extend %align;
+  height: 120px;
+  width: 100%;
+
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.features-list-wrapper__icon {
+  background-repeat: none;
+  background-size: contain;
+}
+
+.features-list__title {
+  margin-bottom: 10px;
+
+  @include font($fw: 700, $lh: 16px);
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
