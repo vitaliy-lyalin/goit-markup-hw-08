@@ -23,7 +23,7 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="container header-container">
+      <div class="container header__container">
         <nav class="header-navigation">
           <a class="logo link header-navigation__logo" href="./index.html"
             >Web<span class="header-navigation__label">Studio</span>
@@ -38,6 +38,59 @@
             <li class="menu__item"><a href="" class="link menu__link">Контакти</a></li>
           </ul>
         </nav>
+        <button type="button" class="mobile-menu-botton-open" data-menu-open>
+          <svg class="mobile-menu-botton-open_icon">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu" data-menu>
+          <div class="container mobile-menu__container">
+            <botton type="botton" class="mobile-menu__close-botton" data-menu-close>
+              <svg class="mobile-menu__close-icon">
+                <use href="./images/icons.svg#icon-mobile-close"></use>
+              </svg>
+            </botton>
+            <ul class="mobile-nav">
+              <li class="list mobile-nav__item">
+                <a href="./index.html" class="link mobile-nav__link mobile-nav__link_current"
+                  >Студія</a
+                >
+              </li>
+              <li class="list mobile-nav__item">
+                <a href="./portfolio.html" class="link mobile-nav__link">Портфоліо</a>
+              </li>
+              <li class="list mobile-nav__item">
+                <a href="" class="link mobile-nav__link">Контакти</a>
+              </li>
+            </ul>
+            <ul class="mobile-contacts">
+              <li class="list mobile-contacts__item">
+                <a href="tel:+380961111111" class="link mobile-contacts__tel-link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="list mobile-contacts__item">
+                <a href="mailto:info@devstudio.com" class="link mobile-contacts__mail-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-socials">
+              <li class="list mobile-socials_item">
+                <a href="" class="link mobile-socials__link">Instagram</a>
+              </li>
+              <li class="list mobile-socials_item">
+                <a href="" class="link mobile-socials__link">Twitter</a>
+              </li>
+              <li class="list mobile-socials_item">
+                <a href="" class="link mobile-socials__link">Facebook</a>
+              </li>
+              <li class="list mobile-socials_item">
+                <a href="" class="link mobile-socials__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
         <ul class="communication list">
           <li class="communication__item">
             <a href="mailto:info@devstudio.com" class="link communication__link">
@@ -69,7 +122,7 @@
         </div>
       </section>
       <!-- Features -->
-      <section class="section section-features">
+      <!-- <section class="section section-features">
         <div class="container">
           <h2 class="section-title visually-hidden">Особливості</h2>
           <ul class="features-list list">
@@ -119,9 +172,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Skills -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="skills-list list">
@@ -149,9 +202,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Team -->
-      <section class="section section-team">
+      <!-- <section class="section section-team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-box list">
@@ -401,9 +454,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Clients -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="section-title">Постійні клієнти</h2>
           <ul class="clients-list list">
@@ -451,10 +504,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-- Footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <div class="footer-contacts-wrapper">
           <a class="logo link footer-contacts-wrapper__logo" href="./index.html"
@@ -537,17 +590,17 @@
           </div>
         </form>
       </div>
-    </footer>
+    </footer> -->
     <!-- Modal window -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-button" data-modal-close>
           <svg class="modal-close-button__icon" width="18" height="18">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
-        </button>
-        <!-- Modal form -->
-        <p class="modal-form-title">Залиште свої дані, ми вам передзвонимо</p>
+        </button> -->
+    <!-- Modal form -->
+    <!-- <p class="modal-form-title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="modal-form">
           <label class="modal-form__field">
             <span class="modal-form-field__label">Ім'я</span>
@@ -596,9 +649,9 @@
               class="modal-form__comment"
               placeholder="Введіть текст"
             ></textarea>
-          </label>
-          <!-- Checkbox -->
-          <label class="modal-form-checkbox">
+          </label> -->
+    <!-- Checkbox -->
+    <!-- <label class="modal-form-checkbox">
             <input
               type="checkbox"
               class="modal-form-checkbox__check visually-hidden"
@@ -616,7 +669,8 @@
           <button type="submit" class="button modal-form-submit-button">Відправити</button>
         </form>
       </div>
-    </div>
-    <script src="./js/modal.js"></script>
+    </div> -->
+    <script src="./js/menu.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>
