@@ -122,7 +122,7 @@
         </div>
       </section>
       <!-- Features -->
-      <!-- <section class="section section-features">
+      <section class="section section-features">
         <div class="container">
           <h2 class="section-title visually-hidden">Особливості</h2>
           <ul class="features-list list">
@@ -172,37 +172,91 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Skills -->
-      <!-- <section class="section">
+      <section class="section section-skills">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="skills-list list">
             <li class="skills-list__item">
-              <img
-                src="./images/box1.jpg"
-                alt="Розробка десктопного додатку"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/skills/box1-desktop.webp    1x,
+                    ./images/skills/box1-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="370px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/skills/box1-desktop.jpg    1x,
+                    ./images/skills/box1-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="370px"
+                  type="image/jpg"
+                />
+
+                <img src="./images/skills/box1-desktop.jpg" alt="Розробка десктопного додатку" />
+              </picture>
               <p class="skills-list__label">Десктопні додатки</p>
             </li>
             <li class="skills-list__item">
-              <img
-                src="./images/box2.jpg"
-                alt="Розробка додатку для мобільного телефону"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/skills/box2-desktop.webp    1x,
+                    ./images/skills/box2-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="370px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/skills/box2-desktop.jpg    1x,
+                    ./images/skills/box2-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="370px"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/skills/box2-desktop.jpg"
+                  alt="Розробка додатку для мобільного телефону"
+                />
+              </picture>
               <p class="skills-list__label">Мобільні додатки</p>
             </li>
             <li class="skills-list__item">
-              <img src="./images/box3.jpg" alt="Розробка дизайну" width="370" height="294" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/skills/box3-desktop.webp    1x,
+                    ./images/skills/box3-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="370px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/skills/box3-desktop.jpg    1x,
+                    ./images/skills/box3-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="370px"
+                  type="image/jpg"
+                />
+                <img src="./images/skills/box3-desktop.jpg" alt="Розробка дизайну" />
+              </picture>
               <p class="skills-list__label">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Team -->
       <!-- <section class="section section-team">
         <div class="container">
