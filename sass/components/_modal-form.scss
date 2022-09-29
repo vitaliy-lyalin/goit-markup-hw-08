@@ -1,8 +1,9 @@
+/* mobile 480px */
 .modal-form-title {
   margin-bottom: 12px;
   text-align: center;
 
-  @include font($fw: 700, $fs: 20px, $lh: 23px);
+  @include font($fw: 700, $fs: 20px, $lh: 30px);
   color: var(--secondary-text-color);
 }
 .modal-form {
@@ -26,7 +27,7 @@
 
   transition: border-color var(--transition-dur-and-func);
 
-  @include font($fs: 12px, $lh: 14px, $ls: 0.01em);
+  @include font($lh: 16px, $ls: 0.01em);
   color: var(--primary-text-color);
 
   &:focus {
@@ -65,11 +66,11 @@
   resize: none;
   transition: border-color var(--transition-dur-and-func);
 
-  @include font($fs: 12px, $lh: 14px, $ls: 0.01em);
+  @include font($lh: 16px, $ls: 0.01em);
   color: var(--primary-text-color);
 
   &::placeholder {
-    @include font($fs: 12px, $lh: 14px, $ls: 0.01em);
+    @include font($lh: 16px, $ls: 0.01em);
     color: rgba(117, 117, 117, 0.5);
   }
   &:focus {
@@ -80,8 +81,9 @@
 
 .modal-form-checkbox {
   @extend %align;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 30px;
+  @include font($fs: 12px, $lh: 14px);
 }
 .modal-form-checkbox__custom-check {
   border: 1px solid var(--secondary-text-color);
@@ -118,4 +120,26 @@
 
   background-color: var(--accent-color);
   color: var(--white-color);
+}
+
+/* tablet 768px */
+
+/*  desktop 1200px */
+@media screen and (min-width: 1200px) {
+  .modal-form-title {
+    @include font($fw: 700, $fs: 20px, $lh: 23px);
+  }
+
+  .modal-form__comment {
+    @include font($fs: 12px, $lh: 14px, $ls: 0.01em);
+
+    &::placeholder {
+      @include font($fs: 12px, $lh: 14px, $ls: 0.01em);
+      color: rgba(117, 117, 117, 0.5);
+    }
+  }
+
+  .modal-form-checkbox {
+    @include font($fs: 14px, $lh: 24px);
+  }
 }

@@ -1,3 +1,4 @@
+/* mobile 480px */
 .menu {
   display: none;
 }
@@ -34,7 +35,7 @@
     fill: var(--accent-color);
   }
 }
-//  Desktop style
+/* tablet 768px */
 @media screen and (min-width: 768px) {
   .mobile-menu-botton-open {
     display: none;
@@ -104,7 +105,7 @@
   }
 }
 
-//  Desktop style
+/*  desktop 1200px */
 @media screen and (min-width: 1200px) {
   .header {
     padding: 24px 0;

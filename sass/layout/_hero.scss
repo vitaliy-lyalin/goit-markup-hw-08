@@ -1,4 +1,4 @@
-/* mmobile 480px */
+/* mobile 480px */
 .section-hero {
   text-align: center;
   padding-top: 118px;
@@ -99,44 +99,3 @@
       url('../images/hero/overlay-desktop@2x.jpg');
   }
 }
-
-// .section-hero {
-//   text-align: center;
-//   padding-top: 200px;
-//   padding-bottom: 200px;
-//   background-color: #c4c4c4;
-// }
-// .overlay {
-//   max-width: 1600px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-//     url('../images/Overlay.jpg');
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
-// }
-
-// .section-hero__title {
-//   margin: 0 auto 30px;
-//   max-width: 696px;
-
-//   @include font(900, 44px, 60px, 0.06em);
-//   text-transform: uppercase;
-//   color: var(--white-color);
-// }
-
-// .section-hero__button {
-//   padding: 10px 32px;
-
-//   background-color: var(--accent-color);
-//   color: var(--white-color);
-
-//   transition: background-color var(--transition-dur-and-func), color var(--transition-dur-and-func);
-
-//   &:hover,
-//   &:focus {
-//     background-color: var(--secondary-background-color);
-//     color: var(--secondary-text-color);
-//   }
-// }
