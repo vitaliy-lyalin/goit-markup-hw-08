@@ -18,12 +18,12 @@
 .header-navigation__label {
   color: var(--black-color);
 }
-.mobile-menu-botton-open {
+.mobile-menu-button-open {
   border: none;
   background-color: transparent;
   padding: 0;
 }
-.mobile-menu-botton-open_icon {
+.mobile-menu-button-open_icon {
   line-height: 0;
   width: 40px;
   height: 40px;
@@ -37,7 +37,7 @@
 }
 /* tablet 768px */
 @media screen and (min-width: 768px) {
-  .mobile-menu-botton-open {
+  .mobile-menu-button-open {
     display: none;
   }
 
