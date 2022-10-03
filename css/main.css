@@ -1217,8 +1217,8 @@ section {
 .portfolio-filter__button {
   padding: 6px 22px;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.8571428571;
+  font-size: 16px;
+  line-height: 1.625;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   background-color: var(--secondary-background-color);
@@ -1240,11 +1240,17 @@ section {
   }
 }
 
+.portfolio-card__link {
+  display: block;
+  transition: transform var(--transition-dur-and-func);
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio-card__link {
     display: flex;
     flex-direction: column;
     height: 100%;
+    transition: transform var(--transition-dur-and-func);
   }
 }
 
