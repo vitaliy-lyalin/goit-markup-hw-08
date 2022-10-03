@@ -678,12 +678,11 @@ section {
   .communication {
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-  .communication__item:last-child {
-    margin-right: 15px;
   }
   .communication__link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 12px;
@@ -695,8 +694,16 @@ section {
     color: var(--accent-color);
   }
   .communication__icon {
-    margin-right: 8px;
+    margin-right: 10px;
     fill: currentColor;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .communication__item {
+    display: flex;
+  }
+  .communication__item:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 /*  desktop 1200px */
@@ -727,9 +734,6 @@ section {
     font-size: 14px;
     line-height: 1.1428571429;
     letter-spacing: 0.02em;
-  }
-  .communication__icon {
-    margin-right: 10px;
   }
 }
 /* mobile 480px */
