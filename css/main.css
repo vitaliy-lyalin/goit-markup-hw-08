@@ -605,7 +605,6 @@ section {
 }
 
 .header {
-  padding: 16px 0;
   background-color: var(--white-color);
   border-bottom: 1px solid #ececec;
 }
@@ -614,6 +613,11 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.header-navigation__logo {
+  display: inline-block;
+  padding: 16px 0;
 }
 
 .header-navigation__label {
@@ -642,14 +646,12 @@ section {
   .mobile-menu-button-open {
     display: none;
   }
-  .header {
-    padding: 16px 0;
-  }
   .header-navigation {
     display: flex;
     align-items: center;
   }
   .header-navigation__logo {
+    padding: 26px 0;
     margin-right: 87px;
   }
   .menu {
@@ -699,10 +701,8 @@ section {
 }
 /*  desktop 1200px */
 @media screen and (min-width: 1200px) {
-  .header {
-    padding: 24px 0;
-  }
   .header-navigation__logo {
+    padding: 24px 0;
     margin-right: 93px;
   }
   .menu__link {
