@@ -1,8 +1,18 @@
+/* mobile 480px */
+/* tablet 768px */
 .section-title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
 
-  @include font($fw: 700, $fs: 36px, $lh: 42px);
+  @include font($fw: 700, $fs: 28px, $lh: 33px);
   color: var(--secondary-text-color);
+}
+
+/*  desktop 1200px */
+@media screen and (min-width: 1200px) {
+  .section-title {
+    margin-bottom: 50px;
+    @include font($fw: 700, $fs: 36px, $lh: 42px);
+  }
 }

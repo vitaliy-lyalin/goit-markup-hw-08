@@ -31,12 +31,6 @@
     border: 1px solid var(--accent-color);
   }
 }
-@media screen and (max-width: 1199px) {
-  .section-title__clients {
-    margin-bottom: 30px;
-    @include font($fw: 700, $fs: 28px, $lh: 33px);
-  }
-}
 
 /* tablet 768px */
 @media screen and (min-width: 768px) {

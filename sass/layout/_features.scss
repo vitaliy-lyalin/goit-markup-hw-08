@@ -16,6 +16,7 @@
 }
 
 .features-list__title {
+  margin-bottom: 10px;
   @include font($fw: 700, $lh: 16px);
   text-transform: uppercase;
   color: var(--secondary-text-color);
